@@ -17,15 +17,17 @@
 <div class="main">
   <nav class="main-menu">
     <li class="menu_item">
-      <a title="English" href="English.com">click</a>
+      <a title="English" href="https://matzit20.github.io">click</a>
+      <!-- <a title="Français" href="Français.com">click</a> -->
     </li>
   </nav>
 </div>
 
 <script>
-  var a = document.querySelector('[title="English"]');
+  var a = document.querySelector('[title="English"]') ??
+          document.querySelector('[title="Français"]');
   if (a) {
-    a.setAttribute('href', 'https://apple.ca');
+    a.setAttribute('href', '#');
   }
 </script>
 
